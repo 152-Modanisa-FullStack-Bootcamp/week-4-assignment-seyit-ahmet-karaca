@@ -1,0 +1,22 @@
+{
+  "name": "acceptance",
+  "version": "1.0.0",
+  "files": [
+    "/features"
+  ],
+  "scripts": {
+    "start": "npx cucumber-js --format progress"
+  },
+  "dependencies": {
+    "axe-puppeteer": "^1.1.1",
+    "axe-reports": "^1.1.11",
+    "cucumber": "^6.0.5",
+    "dotenv": "^8.6.0",
+    "pixelmatch": "^5.2.1",
+    "puppeteer": "^8.0.0"
+  },
+  "puppeteerOptions": {
+    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
+    "PUPPETEER_EXECUTABLE_PATH": "which chromium"
+  }
+}
